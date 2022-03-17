@@ -22,9 +22,9 @@ const ListTodos = () => {
       const response = await fetch("/api/todos");
       const text = await response.text();
       await console.log(text);
-      // const jsonData = await response.json();
+      const jsonData = await response.json();
 
-      // setTodos(jsonData);
+      setTodos(jsonData);
     } catch (err) {
       console.error(err.message);
     }
