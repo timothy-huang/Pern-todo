@@ -5,7 +5,7 @@ Built using:
 - PERN Stack (lol)
  -  PostgreSQL (Heroku Postgres)
  -  Express.js
- -  React
+ -  React (bootstrap 4 for ez styling)
  -  Node.js
 
 DevTools:
