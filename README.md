@@ -1,2 +1,2 @@
 # Pern-todo
-Learning how to use the PERN stack.
+This is a simple PERN stack To-do list that I deployed using heroku. 
