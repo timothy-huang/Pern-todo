@@ -46,9 +46,7 @@ app.post("/todos", async (req, res) => {
 app.get("/todos", async (req, res) => {
   try {
     const allTodos = await pool.query("SELECT * FROM todo");
-    let text = res.text(allTodos.rows); // convert to plain text
-    console.log(text);
-    // res.json(allTodos.rows);
+    res.json(allTodos.rows);
   } catch (err) {
     console.error(err.message);
   }
