@@ -1,3 +1,5 @@
+This is a simple PERN stack To-do list that I deployed using heroku.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
