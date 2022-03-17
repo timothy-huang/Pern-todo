@@ -37,7 +37,6 @@ app.post("/todos", async (req, res) => {
     );
 
     res.json(newTodo.rows[0]);
-    console.log(newTodo.rows[0]);
   } catch (err) {
     console.error(err.message);
   }
@@ -47,8 +46,8 @@ app.post("/todos", async (req, res) => {
 app.get("/todos", async (req, res) => {
   try {
     const allTodos = await pool.query("SELECT * FROM todo");
-    res.json(allTodos.rows);
     console.log(allTodos.rows);
+    res.json(allTodos.rows);
   } catch (err) {
     console.error(err.message);
   }
@@ -63,7 +62,6 @@ app.get("/todos/:id", async (req, res) => {
       id,
     ]);
     res.json(todo.rows[0]);
-    console.log(todo.rows[0]);
   } catch (err) {
     console.error(err.message);
   }
