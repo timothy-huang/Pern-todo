@@ -20,7 +20,8 @@ const ListTodos = () => {
   const getTodos = async () => {
     try {
       const response = await fetch("/todos");
-      // const text = await response.text();
+      const text = await response.text();
+      await console.log(text);
       // const jsonData = await response.json();
 
       // setTodos(jsonData);
